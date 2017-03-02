@@ -467,7 +467,6 @@ public class AccountSetupIncoming extends K9Activity implements OnClickListener 
         mNextButton.setEnabled(Utility.domainFieldValid(mServerView)
                 && Utility.requiredFieldValid(mPortView)
                 && (hasValidPasswordSettings || hasValidExternalAuthSettings));
-        Utility.setCompoundDrawablesAlpha(mNextButton, mNextButton.isEnabled() ? 255 : 128);
     }
 
     private void updatePortFromSecurityType() {

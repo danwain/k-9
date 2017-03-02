@@ -128,18 +128,6 @@ public class Utility {
         return false;
     }
 
-    /*
-     * TODO disabled this method globally. It is used in all the settings screens but I just
-     * noticed that an unrelated icon was dimmed. Android must share drawables internally.
-     */
-    public static void setCompoundDrawablesAlpha(TextView view, int alpha) {
-//        Drawable[] drawables = view.getCompoundDrawables();
-//        for (Drawable drawable : drawables) {
-//            if (drawable != null) {
-//                drawable.setAlpha(alpha);
-//            }
-//        }
-    }
 
     /**
      * <p>Wraps a multiline string of text, identifying words by <code>' '</code>.</p>

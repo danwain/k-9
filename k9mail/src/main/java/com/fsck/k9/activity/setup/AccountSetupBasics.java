@@ -219,12 +219,6 @@ public class AccountSetupBasics extends K9Activity
 
         mNextButton.setEnabled(valid);
         mManualSetupButton.setEnabled(valid);
-        /*
-         * Dim the next button's icon to 50% if the button is disabled.
-         * TODO this can probably be done with a stateful drawable. Check into it.
-         * android:state_enabled
-         */
-        Utility.setCompoundDrawablesAlpha(mNextButton, mNextButton.isEnabled() ? 255 : 128);
     }
 
     private String getOwnerName() {
